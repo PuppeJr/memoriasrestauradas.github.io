@@ -3,123 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digitalização e restauração profissional de fotos antigas em Porto Alegre">
     <title>Memórias Restauradas - Digitalização Profissional</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- CABEÇALHO -->
     <header class="cabecalho">
-        <div class="logo-container">
-            <img src="/memoriasrestauradas.github.io/images/logo-memorias-restauradas (1).jpg" alt="Logo Memórias Restauradas" class="logo">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo-memorias-restauradas.jpg" alt="Logo Memórias Restauradas" class="logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- SEÇÃO INICIAL -->
     <section id="home" class="secao-inicial">
-        <div class="texto-inicial">
-            <h1>Preservando Memórias para Gerações</h1>
-            <p>"Transformamos fotos antigas em relíquias digitais"</p>
-            <button onclick="abrirWhatsApp()">Fale agora pelo WhatsApp</button>
-        </div>
+        <div class="container">
+            <div class="texto-inicial">
+                <h1>Preservando Memórias para Gerações</h1>
+                <p class="slogan">Transformamos fotos antigas em relíquias digitais</p>
+                <button class="btn-whatsapp" onclick="abrirWhatsApp()">Fale agora pelo WhatsApp</button>
+            </div>
 
-        <!-- MAPA DO GOOGLE COM AVALIAÇÕES -->
-        <div class="mapa-embed">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.523456!2d-51.165432!3d-30.034130!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s2d-51.165432!2e4!5spt-BR!15sCgZyZWxhdGl2Z瑞！4v1717812345!5m2!1spt-BR!2sbr" 
-                width="100%" 
-                height="450" 
-                style="border:0; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);" 
-                allowfullscreen 
-                loading="lazy">
-            </iframe>
-        </div>
+            <div class="mapa-avaliacoes">
+                <div class="mapa-embed">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.3256789!2d-51.165432!3d-30.034130!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzAyLjkiUyA1McKwMDknNTUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="450" 
+                        allowfullscreen 
+                        loading="lazy">
+                    </iframe>
+                </div>
 
-        <!-- BOTÃO PARA DEIXAR AVALIAÇÃO -->
-        <div class="avaliacoes-btn">
-            <a href="https://g.page/r/CTpgyHBkkOhSEAE/review" target="_blank">
-                <button>Deixe sua avaliação no Google</button>
-            </a>
+                <div class="avaliacoes-btn">
+                    <a href="https://g.page/r/CTpgyHBkkOhSEAE/review" target="_blank" rel="noopener noreferrer">
+                        <button class="btn-avaliacao">Deixe sua avaliação no Google</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- SEÇÃO DE SERVIÇOS -->
     <section id="servicos" class="secao-servicos">
-        <h2>Nossos Serviços</h2>
-        <div class="servicos-container">
-            <div class="servico-item">
-                <img src="memoriasrestauradas.github.io/images/digital.jpeg" alt="Digitalização">
-                <h3>Digitalização Profissional</h3>
-                <p>Fotos, slides, filmes e documentos convertidos em alta resolução</p>
-            </div>
-            <div class="servico-item">
-                <img src="icone-restauracao.png" alt="Restauração">
-                <h3>Restauração Fotográfica</h3>
-                <p>Remoção de danos, restauração de cores e correção de defeitos</p>
-            </div>
-            <div class="servico-item">
-                <img src="icone-entrega.png" alt="Entrega">
-                <h3>Entregas Parceiras</h3>
-                <p>Opções de envio com 
-                   <a href="https://uber.com/entregas" target="_blank">Uber Entregas</a> 
-                   e 
-                   <a href="https://www.loggi.com/" target="_blank">Loggi</a>
-                </p>
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-container">
+                <div class="servico-item">
+                    <div class="servico-img">
+                        <img src="images/digital.jpeg" alt="Digitalização profissional">
+                    </div>
+                    <h3>Digitalização Profissional</h3>
+                    <p>Fotos, slides, filmes e documentos convertidos em alta resolução com equipamentos especializados.</p>
+                </div>
+                <div class="servico-item">
+                    <div class="servico-img">
+                        <img src="images/restauracao.jpg" alt="Restauração fotográfica">
+                    </div>
+                    <h3>Restauração Fotográfica</h3>
+                    <p>Remoção de danos, restauração de cores e correção de defeitos com técnicas profissionais.</p>
+                </div>
+                <div class="servico-item">
+                    <div class="servico-img">
+                        <img src="images/entrega.jpg" alt="Serviço de entrega">
+                    </div>
+                    <h3>Entregas Parceiras</h3>
+                    <p>Opções de envio seguro com <a href="https://uber.com/entregas" target="_blank" rel="noopener noreferrer">Uber Entregas</a> e <a href="https://www.loggi.com/" target="_blank" rel="noopener noreferrer">Loggi</a> em todo Porto Alegre.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- PORTFÓLIO -->
-    <section id="portfolio" class="secao-portifolio">
-        <h2>Veja nosso Trabalho</h2>
-        <div class="galeria">
-            <div class="foto-item">
-                <img src="antes-depois1.jpg" alt="Exemplo 1">
-                <div class="overlay">
-                    <button onclick="abrirFotoLarger()">Ver detalhes</button>
+    <section id="portfolio" class="secao-portfolio">
+        <div class="container">
+            <h2>Veja nosso Trabalho</h2>
+            <div class="galeria">
+                <div class="foto-item">
+                    <img src="images/antes-depois1.jpg" alt="Restauração exemplo 1">
+                    <div class="overlay">
+                        <button class="btn-detalhes" onclick="abrirModal('images/antes-depois1.jpg')">Ver detalhes</button>
+                    </div>
                 </div>
+                <div class="foto-item">
+                    <img src="images/antes-depois2.jpg" alt="Restauração exemplo 2">
+                    <div class="overlay">
+                        <button class="btn-detalhes" onclick="abrirModal('images/antes-depois2.jpg')">Ver detalhes</button>
+                    </div>
+                </div>
+                <!-- Adicione mais itens conforme necessário -->
             </div>
-            <!-- Repetir para outras fotos -->
         </div>
     </section>
 
+    <!-- Modal para imagens ampliadas -->
+    <div id="modal" class="modal">
+        <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+        <img class="modal-conteudo" id="modal-img">
+    </div>
+
     <!-- SEÇÃO DE CONTATO -->
     <section id="contato" class="secao-contato">
-        <h2>Fale Conosco</h2>
-        <div class="contato-container">
-            <div class="endereco">
-                <p><strong>Endereço:</strong> Rua Coliseu, 781 - Restinga<br>
-                Porto Alegre/RS</p>
-                <p><strong>Telefone:</strong> 
-                   <a href="tel:+5551992379901">+55 (51) 99237-9901</a>
-                </p>
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <div class="contato-container">
+                <div class="info-contato">
+                    <div class="endereco">
+                        <h3>Endereço</h3>
+                        <p>Rua Coliseu, 781 - Restinga<br>
+                        Porto Alegre/RS</p>
+                    </div>
+                    <div class="telefone">
+                        <h3>Telefone</h3>
+                        <p><a href="tel:+5551992379901">(51) 99237-9901</a></p>
+                    </div>
+                    <div class="horario">
+                        <h3>Horário de Atendimento</h3>
+                        <p>Segunda a Sexta: 9h às 18h<br>
+                        Sábado: 9h às 12h</p>
+                    </div>
+                </div>
+                <form class="formulario-contato" id="form-contato">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
             </div>
-            <form class="formulario-contato">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu e-mail" required>
-                <textarea placeholder="Sua mensagem"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
         </div>
     </section>
 
     <!-- RODAPÉ -->
     <footer class="rodape">
-        <p>© 2023 Memórias Restauradas | Todos os direitos reservados</p>
-        <div class="redes-sociais">
-            <a href="https://api.whatsapp.com/send?phone=5551992379901" target="_blank">
-                <img src="icone-whatsapp.png" alt="WhatsApp">
-            </a>
-            <a href="https://www.google.com/maps" target="_blank">
-                <img src="icone-google-maps.png" alt="Google Maps">
-            </a>
+        <div class="container">
+            <div class="rodape-container">
+                <div class="copyright">
+                    <p>&copy; <span id="ano-atual"></span> Memórias Restauradas | Todos os direitos reservados</p>
+                </div>
+                <div class="redes-sociais">
+                    <a href="https://api.whatsapp.com/send?phone=5551992379901" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <img src="images/whatsapp-icon.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://www.google.com/maps/place/Rua+Coliseu,+781+-+Restinga,+Porto+Alegre+-+RS" target="_blank" rel="noopener noreferrer" aria-label="Google Maps">
+                        <img src="images/google-maps-icon.png" alt="Google Maps">
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
